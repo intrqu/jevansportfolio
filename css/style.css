@@ -863,6 +863,10 @@ header .mobile-menu {
 	top: 6px;
 }
 
+.experience h4 {
+	margin-bottom: 0px;
+}
+
 .about .timeline ol li > div > div.education:before {
 	right: -40px;
 	top: 6px;
