@@ -38,11 +38,19 @@ export async function POST(request: Request) {
 			{ message: "Email sent successfully" },
 			{ status: 200 }
 		);
-	} catch (err: any) {
-		console.error("Email send failed:", err);
-		return NextResponse.json(
-			{ message: "Error sending email", error: err.message },
-			{ status: 500 }
-		);
+	} catch (err: unknown) {
+		if (err instanceof Error) {
+			console.error("Email send failed:", err);
+			return NextResponse.json(
+				{ message: "Error sending email", error: err.message },
+				{ status: 500 }
+			);
+		} else {
+			console.error("Unknown error", err);
+			return NextResponse.json(
+				{ message: "Unexpected error occurred" },
+				{ status: 500 }
+			);
+		}
 	}
 }
