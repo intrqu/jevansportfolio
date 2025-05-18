@@ -166,7 +166,7 @@ export default async function PortfolioProject({
 							{/* Lightbox Media Grid */}
 							{(project.lightboxImages?.length ?? 0) > 0 && (
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-6 lg:mt-12">
-									{project.lightboxImages!.map(
+									{project.lightboxImages?.map(
 										(img, index) => (
 											<div
 												key={index}
