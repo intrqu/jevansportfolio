@@ -1,6 +1,6 @@
 import HeroAvatar from '@/public/images/hero-avatar.jpg';
-import PortfolioImg from '@/public/images/portfolio-img.jpg';
-import PortfolioImgWide from '@/public/images/portfolio-img-wide.jpg';
+// import PortfolioImg from '@/public/images/portfolio-img.jpg';
+// import PortfolioImgWide from '@/public/images/portfolio-img-wide.jpg';
 
 import UniversalPortfolioImg from '@/public/images/portfolio/universal-studios/us-3.png';
 import UniversalPortfolioImg1 from '@/public/images/portfolio/universal-studios/us-2.png';
