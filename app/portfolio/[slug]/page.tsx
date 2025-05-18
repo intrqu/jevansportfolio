@@ -164,8 +164,7 @@ export default async function PortfolioProject({
 						</div>
 						<div className="block">
 							{/* Lightbox Media Grid */}
-							{(project.lightboxImages?.length > 0 ||
-								project.video) && (
+							{project.lightboxImages?.length > 0 && (
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-6 lg:mt-12">
 									{/* Lightbox Images */}
 									{project.lightboxImages?.map(
@@ -194,32 +193,6 @@ export default async function PortfolioProject({
 												</a>
 											</div>
 										)
-									)}
-
-									{/* Lightbox Video */}
-									{project.video && (
-										<div className="w-full overflow-hidden rounded-lg">
-											<a
-												href={project.video.url}
-												data-gallery={`lightbox-${project.slug}`}
-												className="glightbox group block relative"
-											>
-												<Image
-													src={
-														project.video.thumbnail
-													}
-													alt={project.title}
-													loading="lazy"
-													placeholder="blur"
-													width={1280}
-													height={500}
-													className="w-full h-auto object-cover group-hover:scale-105 transition ease-custom duration-500"
-												/>
-												<div className="inline-flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60px] h-[60px] rounded-full bg-black/20 backdrop-blur text-white text-lg">
-													<i className="bi bi-play-fill"></i>
-												</div>
-											</a>
-										</div>
 									)}
 								</div>
 							)}
