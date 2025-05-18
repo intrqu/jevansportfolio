@@ -76,12 +76,6 @@ export default function Contact() {
 								{contactData.mainData.email}
 							</h3>
 						</div>
-						<div className="w-1/2">
-							<h6 className="font-outfit font-medium uppercase text-sm tracking-wider text-white mb-2">
-								Call:
-							</h6>
-							{/* <h3 className="font-outfit font-medium text-2xl lg:text-3xl text-white">{contactData.mainData.phone}</h3> */}
-						</div>
 					</div>
 					{/* Contact Form */}
 					<div className="mt-8 lg:text-right">
