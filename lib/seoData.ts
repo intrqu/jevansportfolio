@@ -13,9 +13,9 @@ const siteUrl = 'http://localhost:3000';
 
 export const seoData: PageSEO = {
     home: {
-        title: 'Mone - Personal Portfolio Template',
-        description: 'Personal Portfolio Template',
-        keywords: ['Mone', 'portfolio', 'personal portfolio'],
+        title: 'Jenn Evans Portfolio',
+        description: 'Jevans Portfolio is a personal portfolio website showcasing my work and projects.',
+        keywords: ['portfolio', 'web development', 'projects', 'personal website'],
         canonicalUrl: siteUrl,
     },
     contact: {

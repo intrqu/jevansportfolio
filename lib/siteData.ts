@@ -2,6 +2,11 @@ import HeroAvatar from '@/public/images/hero-avatar.jpg';
 import PortfolioImg from '@/public/images/portfolio-img.jpg';
 import PortfolioImgWide from '@/public/images/portfolio-img-wide.jpg';
 
+import UniversalPortfolioImg from '@/public/images/portfolio/universal-studios/us-3.png';
+import UniversalPortfolioImg1 from '@/public/images/portfolio/universal-studios/us-2.png';
+import UniversalPortfolioImg2 from '@/public/images/portfolio/universal-studios/us-3.png';
+import UniversalPortfolioImgWide from '@/public/images/portfolio/universal-studios/us-1.png';
+
 export const headerData = {
     logo: 'JE',
     navlinks: [
@@ -108,36 +113,34 @@ export const portfolioData = {
     },
     projects: [
         {
-            title: 'Project Title 1',
-            slug: 'project-title-1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit',
+            title: 'Universal Studios',
+            slug: 'universal-studios',
+            description: 'A responsive dashboard for internal use at Universal Studios, designed and developed to synchronize audio and video assets with precision. I led both the UX and front-end engineering, building a smooth interface that allowed editors to preview, align, and manage multimedia tracks in real-time. The tool features timeline scrubbing, playback control, and media asset management — all optimized for performance and clarity across devices.',
             keywords: 'key1, key2, key3',
             categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
+                { name: 'Design' },
+                { name: 'UX' },
+                { name: 'Development' }
             ],
-            services: [
-                { name: 'Item' },
-                { name: 'Item' },
-            ],
-            client: 'FlaTheme',
-            duration: '235 Hours',
+            client: 'Universal Studios',
+            duration: '120 Hours',
             projectLink: {
-                title: 'www.flatheme.net',
-                url: 'https://www.flatheme.net'
+                title: 'N/A - Internal Tool',
+                url: ''
             },
-            content: '<p class="text-white/70">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <h5 class="text-2xl font-outfit font-medium text-white mt-6 mb-2">Heading</h5> <p class="text-white/70">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
-            mainImage: PortfolioImg,
-            wideImage: PortfolioImgWide,
-            imagesLightbox: {
-                image: PortfolioImg,
-                alt: 'Image Alt'
+            content: '<p class="text-white/70">Designed and built a real-time dashboard and mobile interface for Universal Studios, enabling synchronized audio/video playback across multiple devices in group viewing scenarios. The system leveraged Croquet’s real-time collaboration framework to achieve millisecond-level sync and precise volume control across all users.</p>',
+            mainImage: UniversalPortfolioImg,
+            wideImage: UniversalPortfolioImgWide,
+            lightboxImages: [
+            {
+                image: UniversalPortfolioImg1,
+                alt: 'Universal Studios dashboard interface',
             },
-            video: {
-                thumbnail: PortfolioImg,
-                url: 'https://www.youtube.com/watch?v=V8yu12uRpBA'
+            {
+                image: UniversalPortfolioImg2,
+                alt: 'Mobile sync screen',
             },
+            ],
             trending: true
         },
         {
