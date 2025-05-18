@@ -164,13 +164,12 @@ export default async function PortfolioProject({
 						</div>
 						<div className="block">
 							{/* Lightbox Media Grid */}
-							{project.lightboxImages?.length > 0 && (
+							{(project.lightboxImages?.length ?? 0) > 0 && (
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-6 lg:mt-12">
-									{/* Lightbox Images */}
-									{project.lightboxImages?.map(
+									{project.lightboxImages!.map(
 										(img, index) => (
 											<div
-												key={`image-${index}`}
+												key={index}
 												className="w-full overflow-hidden rounded-lg"
 											>
 												<a
