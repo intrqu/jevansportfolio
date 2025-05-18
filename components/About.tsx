@@ -75,7 +75,7 @@ const About = () => {
 					<h6 className="font-outfit font-medium tracking-wider uppercase text-sm text-white mb-2">
 						Location
 					</h6>
-					<span className="text-4xl lg:text-5xl xl:text-6xl font-outfit font-light text-white">
+					<span className="text-2xl lg:text-5xl xl:text-6xl font-outfit font-light text-white">
 						{aboutData.mainData.location}
 					</span>
 				</div>

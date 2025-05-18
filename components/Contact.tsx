@@ -32,6 +32,14 @@ export default function Contact() {
 			if (response.ok) {
 				setStatus("success");
 				setFormData({ name: "", email: "", subject: "", message: "" });
+
+				// Optional: scroll to result
+				document
+					.getElementById("success")
+					?.scrollIntoView({ behavior: "smooth" });
+
+				// Optional: reset status after 5 seconds
+				setTimeout(() => setStatus("idle"), 5000);
 			} else {
 				setStatus("error");
 			}
@@ -143,22 +151,20 @@ export default function Contact() {
 							</button>
 						</form>
 						{/* Submit result */}
-						<div className="submit-result">
+						<div className="submit-result mt-4 min-h-[1.5rem]">
 							{status === "success" && (
-								<span
+								<p
 									id="success"
-									className="transition duration-200 ease-out text-green-700"
+									className="text-green-400 font-medium"
 								>
-									Thank you! Your Message has been sent.
-								</span>
+									✅ Thank you! Your message has been sent.
+								</p>
 							)}
 							{status === "error" && (
-								<span
-									id="error"
-									className="transition duration-200 ease-out text-red-600"
-								>
-									Something went wrong. Please try again!
-								</span>
+								<p className="text-red-500 font-medium">
+									❌ Oops! Something went wrong. Please try
+									again.
+								</p>
 							)}
 						</div>
 					</div>
