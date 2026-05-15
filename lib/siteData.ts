@@ -33,7 +33,7 @@ import GreenlightImgWide from "@/public/images/portfolio/greenlight/greenlight-4
 
 //website
 import WebsiteImg from "@/public/images/portfolio/website/website-1.png";
-import WebsiteImg1 from "@/public/images/portfolio/website/website-2.png";
+import WebsiteImg1 from "@/public/images/portfolio/website/website-2.jpg";
 import WebsiteImg2 from "@/public/images/portfolio/website/website-3.png";
 import WebsiteImgWide from "@/public/images/portfolio/website/website-both.jpg";
 
@@ -54,7 +54,7 @@ import k20dashboard3 from "@/public/images/portfolio/analytics-dashboard/k20-3.p
 import k20dashboard4 from "@/public/images/portfolio/analytics-dashboard/k20-4.png";
 
 //brm
-import BrmImg from "@/public/images/portfolio/brm/brm-1.png";
+import BrmImg from "@/public/images/portfolio/brm-website/brm-1.png";
 
 //juniper
 import JuniperImg from "@/public/images/portfolio/juniper/juniper-footer-desktop-focus-hover.png";
@@ -175,6 +175,72 @@ export const portfolioData = {
 	},
 	projects: [
 		{
+			title: "Analytics Dashboard",
+			slug: "analytics-dashboard",
+			description:
+				"Designed and developed an enterprise analytics dashboard for Coppertree Analytics, transforming complex building and energy management data into intuitive, data-driven experiences for operational teams and enterprise users.",
+			keywords: "key1, key2, key3",
+			categories: [
+				{ name: "Design" },
+				{ name: "UX" },
+				{ name: "Development" },
+			],
+			client: "Analytics Dashboard",
+			duration: "300 Hours",
+			projectLink: {
+				title: "Client-facing SaaS",
+				url: "",
+			},
+			content:
+				'<p class="text-white/70">UX/UI Design • Frontend Development • Data Visualization • Dashboard Architecture • Enterprise SaaS</p>',
+			mainImage: k20dashboard,
+			wideImage: k20dashboard2,
+			lightboxImages: [
+				{
+					image: k20dashboard3,
+					alt: "Aggregated Analytics Dashboard Interface",
+				},
+				{
+					image: k20dashboard4,
+					alt: "Aggregated Analytics Dashboard Interface",
+				},
+			],
+			trending: true,
+		},
+		{
+			title: "Juniper Networks Navigation Redesign",
+			slug: "juniper-networks-navigation-redesign",
+			description:
+				"Redesigned the navigation structure for Juniper Networks' enterprise software, improving user accessibility and streamlining workflows for technical professionals.",
+			keywords: "key1, key2, key3",
+			categories: [
+				{ name: "Design" },
+				{ name: "UX" },
+				{ name: "Development" },
+			],
+			client: "Juniper Networks",
+			duration: "300 Hours",
+			projectLink: {
+				title: "Customer-facing Enterprise Website",
+				url: "",
+			},
+			content:
+				'<p class="text-white/70">Led UX and frontend redesign work for Juniper Networks navigation systems, improving information architecture, usability, accessibility, and cross-platform consistency across enterprise-scale web experiences.</p>',
+			mainImage: JuniperImg,
+			wideImage: JuniperImg,
+			lightboxImages: [
+				{
+					image: JuniperImg3,
+					alt: "Juniper Networks Navigation Redesign",
+				},
+				{
+					image: JuniperImg4,
+					alt: "Juniper Networks Navigation Redesign",
+				},
+			],
+			trending: true,
+		},
+		{
 			title: "Universal Studios",
 			slug: "universal-studios",
 			description:
@@ -208,6 +274,39 @@ export const portfolioData = {
 			trending: true,
 		},
 		{
+			title: "Website Redesign",
+			slug: "website-redesign",
+			description:
+				"Redesigned and developed the Croquet platform website to showcase their realtime collaborative “microverse” technology through a bold, playful visual identity and highly interactive frontend experience. Led both the UX/UI direction and frontend implementation, focusing on clear product storytelling, responsive design, motion, and developer-focused usability.",
+			keywords: "key1, key2, key3",
+			categories: [
+				{ name: "Design" },
+				{ name: "UX" },
+				{ name: "Development" },
+			],
+			client: "Croquet",
+			duration: "120 Hours",
+			projectLink: {
+				title: "Website Redesign",
+				url: "",
+			},
+			content:
+				'<p class="text-white/70">Designed and built a modern marketing experience and developer portal for Croquet’s realtime metaverse platform, combining playful visual systems, interactive frontend development, and product-focused UX to communicate complex multiplayer technology in a clear and engaging way.</p>',
+			mainImage: WebsiteImgWide,
+			wideImage: WebsiteImg1,
+			lightboxImages: [
+				{
+					image: WebsiteImg2,
+					alt: "Website interface",
+				},
+				{
+					image: WebsiteImgWide,
+					alt: "Website interface",
+				},
+			],
+			trending: true,
+		},
+		{
 			title: "API Dashboard",
 			slug: "api-dashboard",
 			description:
@@ -236,6 +335,35 @@ export const portfolioData = {
 				{
 					image: ApiDashboardImg2,
 					alt: "API Key Management Screen",
+				},
+			],
+			trending: true,
+		},
+		{
+			title: "Backroad Mapbooks",
+			slug: "backroad-mapbooks",
+			description:
+				"Redesigned the Backroad Mapbooks homepage to modernize the brand experience, improve content discovery, and create a more immersive outdoor-focused digital journey for users exploring maps, trails, and adventure guides.",
+			keywords: "key1, key2, key3",
+			categories: [
+				{ name: "Design" },
+				{ name: "UX" },
+				{ name: "Development" },
+			],
+			client: "Backroad Mapbooks",
+			duration: "300 Hours",
+			projectLink: {
+				title: "Backroad Mapbooks Website",
+				url: "",
+			},
+			content:
+				'<p class="text-white/70">UX/UI Design • Frontend Development • Brand Experience • Responsive Design • Outdoor & Travel Ecommerce</p>',
+			mainImage: BrmImg,
+			wideImage: BrmImg,
+			lightboxImages: [
+				{
+					image: BrmImg,
+					alt: "Backroad Mapbooks Redesign",
 				},
 			],
 			trending: true,

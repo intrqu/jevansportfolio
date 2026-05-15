@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, ReactNode } from 'react';
-import GLightbox from 'glightbox';
 
 interface GalleryWrapperProps {
     children: ReactNode;
@@ -9,15 +8,22 @@ interface GalleryWrapperProps {
 
 function GalleryWrapper({ children }: GalleryWrapperProps) {
     useEffect(() => {
-        const lightbox = GLightbox({
-            selector: '.glightbox',
-            touchNavigation: true,
-            loop: true,
-            autoplayVideos: true,
+        let lightbox: { destroy: () => void } | null = null;
+        let cancelled = false;
+
+        import('glightbox').then(({ default: GLightbox }) => {
+            if (cancelled) return;
+            lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                loop: true,
+                autoplayVideos: true,
+            });
         });
 
         return () => {
-            lightbox.destroy();
+            cancelled = true;
+            lightbox?.destroy();
         };
     }, []);
 
