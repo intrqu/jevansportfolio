@@ -31,6 +31,40 @@ import GreenlightImg1 from "@/public/images/portfolio/greenlight/greenlight-2.jp
 import GreenlightImg2 from "@/public/images/portfolio/greenlight/greenlight-3.png";
 import GreenlightImgWide from "@/public/images/portfolio/greenlight/greenlight-4.png";
 
+//website
+import WebsiteImg from "@/public/images/portfolio/website/website-1.png";
+import WebsiteImg1 from "@/public/images/portfolio/website/website-2.png";
+import WebsiteImg2 from "@/public/images/portfolio/website/website-3.png";
+import WebsiteImgWide from "@/public/images/portfolio/website/website-both.jpg";
+
+//travel site
+import TravelImg from "@/public/images/portfolio/travel/travel-1.png";
+import TravelImg1 from "@/public/images/portfolio/travel/travel-2.png";
+import TravelImg2 from "@/public/images/portfolio/travel/travel-3.png";
+import TravelImgWide from "@/public/images/portfolio/travel/travel-4.png";
+
+//analytics dashboard
+import AnalyticsImg from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio1.png";
+import AnalyticsImg1 from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio2.png";
+import AnalyticsImg2 from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio3.png";
+import AnalyticsImgWide from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio4.png";
+import k20dashboard from "@/public/images/portfolio/analytics-dashboard/k20-2.png";
+import k20dashboard2 from "@/public/images/portfolio/analytics-dashboard/k20-1.png";
+import k20dashboard3 from "@/public/images/portfolio/analytics-dashboard/k20-3.png";
+import k20dashboard4 from "@/public/images/portfolio/analytics-dashboard/k20-4.png";
+
+//brm
+import BrmImg from "@/public/images/portfolio/brm/brm-1.png";
+
+//juniper
+import JuniperImg from "@/public/images/portfolio/juniper/juniper-footer-desktop-focus-hover.png";
+import JuniperImg2 from "@/public/images/portfolio/juniper/juniper-footer-mobile.png";
+import JuniperImg3 from "@/public/images/portfolio/juniper/juniper-header-desktop.png";
+import JuniperImg4 from "@/public/images/portfolio/juniper/juniper-header-mobile.png";
+
+//ksite
+import KsiteImg from "@/public/images/portfolio/ksite/Kyndryl-After.png";
+
 export const headerData = {
 	logo: "JE",
 	navlinks: [
@@ -62,7 +96,7 @@ export const aboutData = {
 		name: "hello, jevans",
 		heroAvatar: HeroAvatar,
 		biography:
-			"Transylvanian-born, Canadian-raised Creative Developer. Half designer, half developer, full-time keyboard gremlin. I make websites that look good and work better — no dark magic (just dark mode). May or may not turn into a bat when debugging.",
+			"Transylvanian-born, Canadian-raised Design Engineer blending UX, frontend development, and interactive storytelling. Half designer, half developer, permanently fueled by caffeine and curiosity. I build digital experiences that feel polished, intentional, and a little bit strange.",
 		location: "Vancouver",
 		yearsOfExperience: "11",
 		shoeSize: "8",
