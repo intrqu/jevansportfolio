@@ -31,23 +31,23 @@ import GreenlightImg1 from "@/public/images/portfolio/greenlight/greenlight-2.jp
 import GreenlightImg2 from "@/public/images/portfolio/greenlight/greenlight-3.png";
 import GreenlightImgWide from "@/public/images/portfolio/greenlight/greenlight-4.png";
 
-//website
-import WebsiteImg from "@/public/images/portfolio/website/website-1.png";
+/*website
+import WebsiteImg from "@/public/images/portfolio/website/website-1.png";*/
 import WebsiteImg1 from "@/public/images/portfolio/website/website-2.jpg";
 import WebsiteImg2 from "@/public/images/portfolio/website/website-3.png";
 import WebsiteImgWide from "@/public/images/portfolio/website/website-both.jpg";
 
-//travel site
+/*travel site
 import TravelImg from "@/public/images/portfolio/travel/travel-1.png";
 import TravelImg1 from "@/public/images/portfolio/travel/travel-2.png";
 import TravelImg2 from "@/public/images/portfolio/travel/travel-3.png";
-import TravelImgWide from "@/public/images/portfolio/travel/travel-4.png";
+import TravelImgWide from "@/public/images/portfolio/travel/travel-4.png";*/
 
-//analytics dashboard
+/*analytics dashboard
 import AnalyticsImg from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio1.png";
 import AnalyticsImg1 from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio2.png";
 import AnalyticsImg2 from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio3.png";
-import AnalyticsImgWide from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio4.png";
+import AnalyticsImgWide from "@/public/images/portfolio/analytics-dashboard/KE-Portfolio4.png";*/
 import k20dashboard from "@/public/images/portfolio/analytics-dashboard/k20-2.png";
 import k20dashboard2 from "@/public/images/portfolio/analytics-dashboard/k20-1.png";
 import k20dashboard3 from "@/public/images/portfolio/analytics-dashboard/k20-3.png";
@@ -58,12 +58,12 @@ import BrmImg from "@/public/images/portfolio/brm-website/brm-1.png";
 
 //juniper
 import JuniperImg from "@/public/images/portfolio/juniper/juniper-footer-desktop-focus-hover.png";
-import JuniperImg2 from "@/public/images/portfolio/juniper/juniper-footer-mobile.png";
+/*import JuniperImg2 from "@/public/images/portfolio/juniper/juniper-footer-mobile.png";*/
 import JuniperImg3 from "@/public/images/portfolio/juniper/juniper-header-desktop.png";
 import JuniperImg4 from "@/public/images/portfolio/juniper/juniper-header-mobile.png";
 
 //ksite
-import KsiteImg from "@/public/images/portfolio/ksite/Kyndryl-After.png";
+import KsiteImg from "@/public/images/portfolio/k-site/Kyndryl-After.png";
 
 export const headerData = {
 	logo: "JE",
@@ -301,6 +301,39 @@ export const portfolioData = {
 				},
 				{
 					image: WebsiteImgWide,
+					alt: "Website interface",
+				},
+			],
+			trending: true,
+		},
+		{
+			title: "Website Redesign",
+			slug: "website-redesign",
+			description:
+				"Redesigned website for ai-native technology company, focusing on a bold, playful visual identity and highly interactive frontend experience. Led both the UX/UI direction and frontend implementation, focusing on clear product storytelling, responsive design, motion, and developer-focused usability.",
+			keywords: "key1, key2, key3",
+			categories: [
+				{ name: "Design" },
+				{ name: "UX" },
+				{ name: "Development" },
+			],
+			client: "Kyndryl",
+			duration: "120 Hours",
+			projectLink: {
+				title: "Website Redesign",
+				url: "",
+			},
+			content:
+				'<p class="text-white/70">Designed and built a modern marketing experience and developer portal for Kyndryl’s AI-native platform, combining playful visual systems, interactive frontend development, and product-focused UX to communicate complex technology in a clear and engaging way.</p>',
+			mainImage: KsiteImg,
+			wideImage: KsiteImg,
+			lightboxImages: [
+				{
+					image: KsiteImg,
+					alt: "Website interface",
+				},
+				{
+					image: KsiteImg,
 					alt: "Website interface",
 				},
 			],
