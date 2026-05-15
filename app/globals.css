@@ -99,3 +99,11 @@
 a.award-link {
 	color: rgb(219, 64, 219);
 }
+
+.swiper-wrapper {
+	height: 600px !important;
+}
+
+.group\/portfolio-box .overflow-hidden {
+	max-height: 400px;
+}
