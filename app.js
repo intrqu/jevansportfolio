@@ -26,3 +26,14 @@ dialog.addEventListener('cancel',()=>{document.body.classList.remove('dialog-ope
 dialog.addEventListener('click',e=>{if(e.target===dialog)closeProject();const next=e.target.closest('[data-next]');if(next)openProject(next.dataset.next,opener);if(e.target.closest('[data-close]'))closeProject()});
 
 document.querySelectorAll('[data-highlight-project]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();openProject(link.dataset.highlightProject,link)}));
+
+const playHero=document.querySelector('.hero');
+const weirdButton=document.getElementById('make-weird');
+const playStatus=document.getElementById('play-status');
+const creature=document.querySelector('.hero-creature');
+const calmMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+weirdButton.addEventListener('click',()=>{const active=playHero.classList.toggle('is-weird');weirdButton.setAttribute('aria-pressed',String(active));weirdButton.innerHTML=active?'Back to earth <span aria-hidden="true">↩</span>':'Make it weird <span aria-hidden="true">✳</span>';playStatus.textContent=active?'Night flight activated. Follow the bat ✦':'A serious toolkit. A curious human.';});
+let creatureFrame=0;
+playHero.addEventListener('pointermove',event=>{if(calmMotion.matches||event.pointerType!=='mouse')return;cancelAnimationFrame(creatureFrame);creatureFrame=requestAnimationFrame(()=>{const box=playHero.getBoundingClientRect();const x=(event.clientX-box.left)/box.width-.5;const y=(event.clientY-box.top)/box.height-.5;creature.style.transform=`translate(${x*65}px, ${y*45}px) rotate(${12+x*20}deg)`;});});
+function settleCreature(){cancelAnimationFrame(creatureFrame);creature.style.transform='rotate(12deg)';}
+playHero.addEventListener('pointerleave',settleCreature);calmMotion.addEventListener('change',settleCreature);
