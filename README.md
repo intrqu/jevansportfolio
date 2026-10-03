@@ -2,7 +2,6 @@
 
 Current complete portfolio exported from the live Site. Includes HTML, CSS, JavaScript, and project images.
 
-Live: https://hello-jenn-studio.jenfrolics.chatgpt.site
 
 ## Preview
 
